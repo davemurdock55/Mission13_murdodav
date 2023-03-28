@@ -1,0 +1,75 @@
+$primary: red;
+@import '~bootstrap/scss/bootstrap';
+@import '~bootstrap-icons/font/bootstrap-icons.css';
+
+// Define the border color variable
+// $border-color: #ccc;
+$border-color: $secondary;
+
+// Define the styles for the rounded table
+.table-rounded {
+  border: 1px solid $border-color;
+  border-radius: 10px;
+  overflow: hidden;
+
+  th,
+  td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid $border-color;
+
+    &:first-child {
+      border-left: 1px solid $border-color;
+    }
+
+    &:last-child {
+      border-right: 1px solid $border-color;
+    }
+  }
+
+  th {
+    background-color: $primary;
+    color: white;
+    text-align: center;
+  }
+
+  tbody {
+    tr {
+      &:hover {
+        background-color: $border-color;
+        color: white;
+      }
+    }
+  }
+}
+.back-to-top-button {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  // border: 3px #fff solid;
+  border: none;
+  background-color: $primary;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  transition: opacity 0.2s ease-in-out;
+  opacity: 0;
+  z-index: 999;
+  outline: none;
+
+  &.visible {
+    opacity: 1;
+  }
+
+  &:hover {
+    background-color: #fff;
+    color: $primary;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+}
