@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 export default function Podcasts() {
+  useEffect(() => {
+    document.title = 'Podcasts | Joel Hilton Movie Collection';
+  }, []);
+
   return (
     <div className="text-center">
       {/* <Banner text={"David's React App | Main"} /> */}

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import data from '.././MovieData.json';
 import './../custom.scss';
 import BackToTopButton from './BackToTopButton';
@@ -6,6 +6,10 @@ import BackToTopButton from './BackToTopButton';
 const mds = data.MovieData;
 
 export default function Movies() {
+  useEffect(() => {
+    document.title = 'Movies | Joel Hilton Movie Collection';
+  }, []);
+
   const [listOfMovies, setListOfMovies] = useState(mds);
 
   const addMovie = () => {

@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 export default function Home() {
+  useEffect(() => {
+    document.title = 'Home | Joel Hilton Movie Collection';
+  }, []);
+
   return (
     <div className="text-center">
-      {/* <Banner text={"David's React App | Main"} /> */}
       <h1 className="text-light mt-3">Joel Hilton Movie Collection</h1>
 
       <center>
