@@ -26,13 +26,13 @@ export default function Navbar() {
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="navbar-nav">
               <NavLink to="/" className="nav-link" aria-current="page">
-                Home
+                <b>Home</b>
               </NavLink>
               <NavLink to="/podcasts" className="nav-link">
-                Podcasts
+                <b>Podcasts</b>
               </NavLink>
               <NavLink to="/movies" className="nav-link">
-                Movie Collection
+                <b>Movie Collection</b>
               </NavLink>
             </div>
           </div>
