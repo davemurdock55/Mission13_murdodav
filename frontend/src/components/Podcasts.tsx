@@ -19,7 +19,7 @@ export default function Podcasts() {
           <img
             src="./baconsale-logo.png"
             className="card-img-top bg-light p-5"
-            alt="Joel Hilton"
+            alt="Baconsale"
           />
           <div className="card-body p-0">
             <div className="bg-primary border-secondary pt-3 pb-2">
